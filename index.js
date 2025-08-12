@@ -33,19 +33,6 @@ function renderAllPosts() {
     container.innerHTML ="";
     for (let i = 0; i < posts.length; i++) {
         let postHtml =`
-        <div class="container">
-            <img id="small-pic" class="glava round-pic" src="${posts[i].avatar}" alt="Vangogh profile picture "> 
-            <h1>${posts[i].name}</h1>
-            <h2>${posts[i].location}</h2>
-            <img class="post" src="${posts[i].post}" alt="">
-            <div class="post-info">
-                <img id="like" onclick="increaseLikes(${i})" class="like" src="images/icon-heart.png" alt="like icon">
-                <img class="like" src="images/icon-comment.png" alt="comment icon">
-                <img class="like" src="images/icon-dm.png" alt="share icon">
-            </div>
-            <h1 id="likes" class="likes">${posts[i].likes} likes</h1>
-            <h1 class="caption">${posts[i].username} <span class="normal-letters">${posts[i].comment}</span></h1>
-        </div>
 
         `;
         container.innerHTML += postHtml;               
