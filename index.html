@@ -12,17 +12,17 @@
         </header>
         <div class="feed"> </div>
         <div class="container">
-            <img id="small-pic" class="glava round-pic" src="${posts[i].avatar}" alt="Vangogh profile picture "> 
-            <h1>${posts[i].name}</h1>
-            <h2>${posts[i].location}</h2>
-            <img class="post" src="${posts[i].post}" alt="">
+            <img id="small-pic" class="glava round-pic" src="images/avatar-vangogh.jpg" alt="Vangogh profile picture "> 
+            <h1 id="name"></h1>
+            <h2 id="location"></h2>
+            <img class="post" src="images/post-vangogh.jpg" alt="">
             <div class="post-info">
-                <img id="like" onclick="increaseLikes(${i})" class="like" src="images/icon-heart.png" alt="like icon">
+                <img id="like" onclick="increaseLikes()" class="like" src="images/icon-heart.png" alt="like icon">
                 <img class="like" src="images/icon-comment.png" alt="comment icon">
                 <img class="like" src="images/icon-dm.png" alt="share icon">
             </div>
-            <h1 id="likes" class="likes">${posts[i].likes} likes</h1>
-            <h1 class="caption">${posts[i].username} <span class="normal-letters">${posts[i].comment}</span></h1>
+            <h1 id="number-of-likes" class="likes"></h1>
+            <h1 class="caption"> <span class="normal-letters"></span></h1>
         </div>
 
         

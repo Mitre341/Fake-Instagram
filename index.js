@@ -28,35 +28,7 @@ const posts = [
     }
 ]
 
-function renderAllPosts() {
-    let container = document.querySelector(".feed");
-    container.innerHTML ="";
-    for (let i = 0; i < posts.length; i++) {
-        let postHtml =`
 
-        `;
-        container.innerHTML += postHtml;               
-            }
-        }
-    
-renderAllPosts();
-
-
-
-
-
-    let broj = 0;
-
-
-
-
-function increaseLikes(i){
-        
-        broj += 1;
-         document.querySelectorAll(".likes").textContent = broj + " likes";
-    
-        
-    }
 
 
 
