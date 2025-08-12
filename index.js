@@ -28,26 +28,6 @@ const posts = [
     }
 ]
 
-
-// document.getElementById("name").textContent  = posts[0].name;
-// document.getElementById("location").textContent = posts[0].location;
-// document.getElementById("small-pic").src = posts[0].avatar;
-// document.getElementById("post").src = posts[0].post;
-// document.getElementById("likes").textContent = posts[0].likes + " likes"; 
-
-// document.getElementById("username").textContent = posts[0].username;
-// document.getElementById("comment").textContent = posts[0].comment;
-
-// function renderPost(index){
-//     document.getElementById("name").textContent  = posts[index].name;
-//     document.getElementById("location").textContent = posts[index].location;
-//     document.getElementById("small-pic").src = posts[index].avatar;
-//     document.getElementById("post").src = posts[index].post;
-//     document.getElementById("likes").textContent = posts[index].likes + " likes";
-//     document.getElementById("username").textContent = posts[index].username;
-//     document.getElementById("comment").textContent = posts[index].comment;
-// }
-
 function renderAllPosts() {
     let container = document.querySelector(".feed");
     container.innerHTML ="";
@@ -91,10 +71,7 @@ function increaseLikes(i){
         
     }
 
-// function increaseLikes(i) {
-//     posts[i].likes++;
-//     document.getElementsByClassName("likes").textContent = posts[i].likes + " likes";
-// }
+
 
 
 
