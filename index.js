@@ -31,8 +31,39 @@ const posts = [
 
 
 
+function renderPosts() {
+let name =  document.getElementById("name");
+name.textContent = posts[0].name;
 
 
+let location = document.getElementById("location");
+location.textContent = posts[0].location;
+
+let avatar = document.getElementById("avatar");
+avatar.src = posts[0].avatar;
+
+let post = document.getElementById("post");
+post.src = posts[0].post;
+
+
+let likes = document.getElementById("likes");
+likes.textContent = posts[0].likes + " likes";
+let likeBtn = document.getElementById("like-btn");
+likeBtn.addEventListener("click", function() {
+    posts[0].likes++;
+    likes.textContent = posts[0].likes + " likes";
+})
+
+
+let username = document.getElementById("username");
+username.textContent =  posts[0].username;
+
+
+
+    
+}
+
+renderPosts();
 
 
 
