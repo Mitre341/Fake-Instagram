@@ -58,6 +58,8 @@ likeBtn.addEventListener("click", function() {
 let username = document.getElementById("username");
 username.textContent =  posts[0].username;
 
+let comment = document.getElementById("comment");
+comment.textContent = posts[0].comment;
 
 
     
